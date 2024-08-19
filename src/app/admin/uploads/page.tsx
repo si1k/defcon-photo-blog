@@ -3,7 +3,7 @@ import SiteGrid from '@/components/SiteGrid';
 import { getUniqueTagsCached } from '@/photo/cache';
 import AdminUploadsClient from '@/admin/AdminUploadsClient';
 
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export default async function AdminUploadsPage() {
   const urls = await getStorageUploadUrlsNoStore();

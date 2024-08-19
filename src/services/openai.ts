@@ -8,7 +8,7 @@ import { removeBase64Prefix } from '@/utility/image';
 import { cleanUpAiTextResponse } from '@/photo/ai';
 
 const RATE_LIMIT_IDENTIFIER = 'openai-image-query';
-const RATE_LIMIT_MAX_QUERIES_PER_HOUR = 100;
+const RATE_LIMIT_MAX_QUERIES_PER_HOUR = 300;
 
 const openai = AI_TEXT_GENERATION_ENABLED
   ? createOpenAI({ apiKey: process.env.OPENAI_SECRET_KEY })
